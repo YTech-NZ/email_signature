@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+.signature{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 170px; /* do not modify this value */
+    padding: 10px;
+}
+
+.left{
+    background-color: red;
+    height: 100%;
+    flex: 1;
+}
+
+.right{
+    background-color: green;
+    height: 100%;
+    flex: 2;
+}
