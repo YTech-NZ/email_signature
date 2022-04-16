@@ -2,10 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .signature{
-    background-color: blue;
+    background-color: black;
     display: flex;
     flex-direction: row;
     width: 600px;
@@ -14,13 +16,51 @@
 }
 
 .left{
-    background-color: red;
     height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left .top{
+    background-color: red;
+    width: 100%;
     flex: 1;
 }
 
-.right{
-    background-color: green;
-    height: 100%;
+.left .mid{
+    background-image: url("./logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
     flex: 2;
+}
+
+.left .bottom{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.left .value:not(:last-child)::after{
+    content: '';
+    height: 20px;
+    position: absolute;
+    width: 2px;
+    margin-top: -3px;
+    margin-left: 6px;
+    background-color: #00A888;
+}
+
+.right{
+    background-color: #00A888;
+    height: 100%;
+    flex: 1;
 }
