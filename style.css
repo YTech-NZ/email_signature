@@ -1,66 +1,134 @@
-*{
-    box-sizing: border-box;
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    height: 108px;
+    width: 313px;
+
+    background-color: black;
+    background-image: -webkit-linear-gradient(30deg, black 50%, #00A885 50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left_wrapper{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 156px;
+    height: 108px;
+}
+
+.createops {
+    padding-top: 5px;
+    margin-bottom: -5px;
+}
+
+.createops p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 7px;
+    color: white;
+    margin-left: 20px;
+}
+
+.createops > img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 54px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.ytech_logo {
+    width: 131px;
+    margin-left: 10px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.tags {
+    grid-column: 1;
+    grid-row: 3;
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: 2px;
+}
+
+.tags > li {
+    float: left;
+    font-size: 5px;
+    padding: 0px 5px;
+    border-right: 1px solid #00A888;
+}
+
+.tags > li:last-child {
+    border-right: none;
+}
+
+.right_wrapper {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    width: 156px;
+    height: 108px;
+}
+
+.info {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100px;
+    margin: 0px auto;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.name {
+    font-size: 12px;
+}
+
+.title {
+    font-size: 6px;
+    font-weight: 400;
+}
+
+.social_icons {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+
+    margin-left: 40px;
+    margin-bottom: 10px;
 }
 
-.signature{
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    width: 600px;
-    height: 170px; /* do not modify this value */
-    padding: 10px;
+.social_icons > li {
+    float: left;
+    padding-right: 15px;
 }
 
-.left{
-    height: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.social_icons > li > a > img {
+    width: 16px;
+    position: relative;
+    z-index: 2;
 }
 
-.left .top{
-    background-color: red;
-    width: 100%;
-    flex: 1;
-}
-
-.left .mid{
-    background-image: url("./logo.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    flex: 2;
-}
-
-.left .bottom{
-    width: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    font-weight: 500;
-    font-size: 11px;
-}
-
-.left .value:not(:last-child)::after{
-    content: '';
-    height: 20px;
-    position: absolute;
-    width: 2px;
-    margin-top: -3px;
-    margin-left: 6px;
-    background-color: #00A888;
-}
-
-.right{
-    background-color: #00A888;
-    height: 100%;
-    flex: 1;
+.social_icons > li > a > div {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    z-index: 1;
+    background-color: white;
 }
