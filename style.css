@@ -10,8 +10,6 @@
     grid-template-rows: 1fr;
     height: 108px;
     width: 313px;
-
-    background-color: black;
     background-image: -webkit-linear-gradient(30deg, black 50%, #00A885 50%);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
